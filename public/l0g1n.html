@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login para admininstradores</title>
-</head>
+    <!--<title> CSS Vertical Tabs | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    
+  <div class="container">
+    <div class="topic">Menú de Admin</div>
+    <div class="content">
+      <input type="radio" name="slider" checked id="home">
+      <input type="radio" name="slider" id="blog">
+      <input type="radio" name="slider" id="help">
+      <input type="radio" name="slider" id="code">
+      <input type="radio" name="slider" id="about">
+      <div class="list">
+        <label for="home" class="home">
+        <i class="fas fa-home"></i>
+        <span class="title">Home</span>
+      </label>
+      <label for="blog" class="blog">
+        
+        <span class="title">EDITAR</span>
+      </label>
+      <label for="help" class="help">
+        
+        <span class="title">AGREGAR</span>
+      </label>
+      <label for="code" class="code">
+        
+        <span class="title">ELIMINAR</span>
+      </label>
+      <label for="about" class="about">
+        
+        <span class="title">CONSULTAR</span>
+      </label>
+      <div class="slider"></div>
+    </div>
+      <div class="text-content">
+        <div class="home text">
+          <div class="title">Hola este es ChatBot BOB</div>
+          <p>Aqui habrá una tabla donde muestre los datos desde la bd</p>
+        </div>
+        <div class="blog text">
+          <div class="title">Editar</div>
+          <p>Aqui habrá una tabla para poder editar</p>
+        </div>
+        <div class="help text">
+          <div class="title">Agregar</div>
+          <p>Aqui habrá una tabla para poder Agregar</p>
+        </div>
+        <div class="code text">
+          <div class="title">Eliminar</div>
+          <p>Aqui habrá una tabla para poder Eliminar</p>
+        </div>
+        <div class="about text">
+          <div class="title">Datos</div>
+          <p>Aqui una gráfica toh flamas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

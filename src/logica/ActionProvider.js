@@ -19,6 +19,29 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             messages: [...prev.messages, botMessage],
         }));
     };
+    const a = () => {
+      const botMessage = createChatBotMessage('Soy BOB, un asistente que te informará sobre los trámites escolares');
+      setState((prev) => ({ 
+          ...prev, //Usa un spread operator, que permite que un iterable (como una function o un string) sea expandido
+          messages: [...prev.messages, botMessage],
+      }));
+  };
+  const b = () => {
+    const botMessage = createChatBotMessage('Toma mi lista *le da la lista*');
+    setState((prev) => ({ 
+        ...prev, //Usa un spread operator, que permite que un iterable (como una function o un string) sea expandido
+        messages: [...prev.messages, botMessage],
+    }));
+};
+const redireccionar  = () => {
+  const botMessage = createChatBotMessage('Te mandaré a la página de los admins, suerte! ');
+  setState((prev) => ({ 
+      ...prev, //Usa un spread operator, que permite que un iterable (como una function o un string) sea expandido
+      messages: [...prev.messages, botMessage],
+  }));
+};
+
+    /*
     const login = () => {
         /*
 import DogPicture from '../components/DogPicture/DogPicture.jsx"
@@ -31,7 +54,7 @@ const config = {
       widgetFunc: (props) => <DogPicture {...props} />,
     },
   ],
-};   */
+};   
 
 
     const link='Click aqui';
@@ -45,6 +68,7 @@ const config = {
 
         }));
     };
+    */
 
     const handleDog = () => {
         const botMessage = createChatBotMessage(
@@ -68,7 +92,9 @@ const config = {
               actions: {
                 handleHello,
                 handleDog,
-                login,
+                a,
+                b,
+                redireccionar,
               },
             });
           })}

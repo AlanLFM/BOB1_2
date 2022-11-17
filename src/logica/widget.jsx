@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import {withRouter} from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';  
+import About from './About';
+import Home from './Home';
+import Contact from './Contact';
+const {pathname}=window.location
+const page=pathname.slice(1)
 
-function abc(){
-  console.log("hola")
-}
+
 const DogPicture = () => {
   const [imageUrl, setImageUrl] = useState('');
 
@@ -16,8 +21,7 @@ const DogPicture = () => {
   
   return (
     <div>
-      <p className='color:"red";'><a href="l0g1n.html">Claro</a></p>
-      <a href="login.js"><button onClick={abc} > hola</button></a>
+       <a href='l0g1n.html'>click aqui</a>
     </div>
   );
 };
